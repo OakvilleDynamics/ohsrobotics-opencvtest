@@ -3,7 +3,6 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 
@@ -19,19 +18,14 @@ public class standardHWMap {
     public Servo clawServo3     = null;
     public Servo clawServo4     = null;
     public Servo jewelStick     = null;
-    //youre mom gay
-
-    public ColorSensor color_sensor = null;
 
     HardwareMap defaultHwMap = null;
     private ElapsedTime period = new ElapsedTime();
-    //Idk what this is but dont remove
-    //ok
+
     public standardHWMap() {
 
     }
     //HARDWARE INTERFACES AND MAPPING FOR REALS
-    //my name is jeff
     public void init (HardwareMap updateHwMap) {
         defaultHwMap = updateHwMap;
 
