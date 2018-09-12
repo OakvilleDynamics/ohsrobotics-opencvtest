@@ -15,6 +15,8 @@ public class standardDriveOpMode extends LinearOpMode{
     public void runOpMode() throws InterruptedException {
         float left;
         float right;
+        boolean clawServoPower = false;
+        boolean multSlow = false;
 
         double multiplier = .7;
 
@@ -49,6 +51,7 @@ public class standardDriveOpMode extends LinearOpMode{
                 hardware.clawServo2.setPosition(90);
                 hardware.clawServo3.setPosition(0);
                 hardware.clawServo4.setPosition(0);
+                clawServoPower = true;
 
             }
             if (gamepad2.left_trigger > .05){ //inverse of above
@@ -56,7 +59,7 @@ public class standardDriveOpMode extends LinearOpMode{
                 hardware.clawServo2.setPosition(0);
                 hardware.clawServo3.setPosition(90);
                 hardware.clawServo4.setPosition(90);
-
+                clawServoPower = true;
             }
 
             //fast and slow mode for drive
@@ -78,6 +81,15 @@ public class standardDriveOpMode extends LinearOpMode{
                     multiplier = .5;
                 }
             }
+
+            //TELEMETRY
+            //not going to lie this might not work the first time running
+            telemetry.addData("Left Power",left);
+            telemetry.addData("Right Power",right);
+            telemetry.addData("Claw Servo Power",clawServoPower);
+            telemetry.addData("this sucks lol","yes");
+            telemetry.update();
+
             //WILL DESTROY SERVOS IF ABUSED
             //if (gamepad2.right_trigger >= 0.1) {
             //    hardware.clawServo1.setPosition(clawGrip1++);
