@@ -3,8 +3,6 @@ package org.opencv.android;
 import java.util.Arrays;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
-
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
@@ -98,7 +96,6 @@ public class Camera2Renderer extends CameraGLRendererBase {
         return false;
     }
 
-    @SuppressLint("MissingPermission")
     @Override
     protected void openCamera(int id) {
         Log.i(LOGTAG, "openCamera");
