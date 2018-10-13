@@ -35,8 +35,9 @@
         android:resource="@xml/device_filter" />
 
       <meta-data
-        android:name="org.firstinspires.main.entry"
-        android:value="true" />
+          android:name="org.firstinspires.main.entry"
+          android:value="true"
+          />
     </activity>
 
     <!-- The robot controller service in which most of the robot functionality is managed -->
