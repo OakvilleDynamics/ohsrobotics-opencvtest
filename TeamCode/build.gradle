@@ -15,7 +15,11 @@
 apply from: '../build.common.gradle'
 android {
     buildToolsVersion '28.0.3'
-    compileSdkVersion 28
+    compileSdkVersion 23
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 }
 dependencies {
     implementation project(':openCVLibrary3')
