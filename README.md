@@ -1,3 +1,10 @@
+# ohsrobotics-new-opencvtest
+This repo is to test OpenCV and DogeCV for this year's game, Rover Ruckus
+
+**This repo is considered _unstable_ and should not be used for tournament play, I _do not_ take responsibility for anything happening to your robot or phone, whether it just does not work, catches fire, or creates nuclear armageddon**
+
+The rest of this file is the FTC readme.
+
 ## Welcome!
 This GitHub repository contains the source code that is used to build an Android app to control a *FIRST* Tech Challenge competition robot.  To use this SDK, download/clone the entire project to your local computer.
 
